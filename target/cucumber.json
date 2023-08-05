@@ -1,0 +1,2052 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Repeated Steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2139805900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2817679000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User searches for \"carpet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"carpet\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_searches_for(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:06:06.699Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1859222300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Validating search result matches with the searched item",
+        "description": "",
+        "id": "validating-search-functionality;validating-search-result-matches-with-the-searched-item",
+        "after": [
+          {
+            "result": {
+              "duration": 2247504800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Step [User validates search result contains {string}] is defined with 1 parameters at \u0027steps.EtsyAppSteps.user_validates_search_result_contains(io.cucumber.datatable.DataTable)\u0027.\nHowever, the gherkin step has 2 arguments:\n * \"carpet\"\n * Table:\n      | carpet  |\n      | rug     |\n      | turkish |\n      | persian |\n\nStep text: User validates search result contains \"carpet\"\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+              "duration": 2707400,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "User validates search result contains \"carpet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"carpet\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_search_result_contains(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "carpet"
+                ]
+              },
+              {
+                "cells": [
+                  "rug"
+                ]
+              },
+              {
+                "cells": [
+                  "turkish"
+                ]
+              },
+              {
+                "cells": [
+                  "persian"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsy"
+          },
+          {
+            "name": "@itemDescription"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Repeated Steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2567456500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2205375100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User searches for \"carpet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"carpet\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_searches_for(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:06:15.851Z",
+        "before": [
+          {
+            "result": {
+              "duration": 883848300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Validating price range functionality for searched item",
+        "description": "",
+        "id": "validating-search-functionality;validating-price-range-functionality-for-searched-item",
+        "after": [
+          {
+            "result": {
+              "duration": 2341144400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 512621700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User selects price range over 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_selects_price_range_over(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3762973200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User validates price range for items over 1000.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000.00",
+                  "offset": 42
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_price_range_for_items_over(java.lang.Double)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsy"
+          },
+          {
+            "name": "@priceRange"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Search functionality",
+    "description": "",
+    "id": "validating-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/EtsySearchFunctionality.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@etsy",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-01T18:06:28.136Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1189448400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2352406200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2229785400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1746322500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Fashion Favorites\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fashion Favorites\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17625100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Fashion favorites\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fashion favorites\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:06:35.684Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1216242800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2366036500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2761074100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2489320600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Jewelry \u0026 Accessories\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jewelry \u0026 Accessories\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4063300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Jewelry \u0026 Accessories - Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jewelry \u0026 Accessories - Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:06:44.526Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1454982700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 2345744900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1781879500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2071096100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Clothing \u0026 Shoes\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Clothing \u0026 Shoes\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65166500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Clothing \u0026 Shoes - Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Clothing \u0026 Shoes - Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:06:52.250Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1408114800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 2292891200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2967193000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2832169400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Home \u0026 Living\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home \u0026 Living\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9098600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Home \u0026 Living - Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home \u0026 Living - Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:01.769Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1235009900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 2337584000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1817255700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2129338100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Wedding \u0026 Party\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wedding \u0026 Party\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11617600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Wedding \u0026 Party - Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wedding \u0026 Party - Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:09.309Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1079903700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 2295686900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2370788800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2075304400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Toys \u0026 Entertainment\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toys \u0026 Entertainment\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24861100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Toys \u0026 Entertainment - Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toys \u0026 Entertainment - Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:17.164Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1115805800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 2172590700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2514722100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1704724800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Art \u0026 Collectibles\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Art \u0026 Collectibles\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5003900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Art \u0026 Collectibles - Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Art \u0026 Collectibles - Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:24.681Z",
+        "before": [
+          {
+            "result": {
+              "duration": 917625500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 2163645100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1688748200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1820391000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Craft Supplies \u0026 Tools\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Craft Supplies \u0026 Tools\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4103200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"Craft Supplies \u0026 Tools - Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Craft Supplies \u0026 Tools - Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:31.278Z",
+        "before": [
+          {
+            "result": {
+              "duration": 974503800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validating titles of each module",
+        "description": "",
+        "id": "validating-etsy-titles;validating-titles-of-each-module;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 2188959400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1704527700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Etsy application",
+            "match": {
+              "location": "steps.EtsyAppSteps.user_navigates_to_etsy_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1486219300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"Gifts \u0026 Gift Cards\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gifts \u0026 Gift Cards\"",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_click_on_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9015700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates the \"The Etsy Gift Guide for 2023 | Etsy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The Etsy Gift Guide for 2023 | Etsy\"",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.EtsyAppSteps.user_validates_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@etsyTitleValidation"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Etsy titles",
+    "description": "",
+    "id": "validating-etsy-titles",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/EtsyTitleValidation.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@etsyTitleValidation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-01T18:07:37.646Z",
+        "before": [
+          {
+            "result": {
+              "duration": 948101400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validating login functionality wih valid credentials",
+        "description": "",
+        "id": "validating-login-functionality;validating-login-functionality-wih-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2205896000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 369605300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to application",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_navigates_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1052112700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User logs in with username \"Tester\" and password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5958600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is successfully logged in and lands on the homepage",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_is_successfully_logged_in_and_lands_on_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@MB-70"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@loginPositive"
+          },
+          {
+            "name": "@MB-70"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:42.233Z",
+        "before": [
+          {
+            "result": {
+              "duration": 909904200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Validating login functionality with invalid credentials",
+        "description": "",
+        "id": "validating-login-functionality;validating-login-functionality-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2215251100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 221600400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User navigates to application",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_navigates_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 246655400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User logs in with username \"tester\" and password \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tester\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Tester\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46118800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User validates error message \"Invalid Login or Password.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid Login or Password.\"",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_validates_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@MB-70"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@loginNegative"
+          },
+          {
+            "name": "@MB-70"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Login Functionality",
+    "description": "",
+    "id": "validating-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/WebOrdersLogin.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@MB-70",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Logging in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 246877900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to application",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_navigates_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 946657500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with username \"Tester\" and password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193798600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Order tab",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_clicks_on_order_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:45.878Z",
+        "before": [
+          {
+            "result": {
+              "duration": 890871100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validating discount calculator",
+        "description": "",
+        "id": "validating-order-creation;validating-discount-calculator;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3200410000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 359410700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects product \"MyMoney\" and quantity 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 21
+                },
+                {
+                  "val": "5",
+                  "offset": 44
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_selects_product_and_quantity(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168380300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User validates the price is correctly calculated for 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 53
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_validates_the_price_is_correctly_calculated_for(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@webOrders"
+          },
+          {
+            "name": "@orderCreation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Logging in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 222351700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to application",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_navigates_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1134516000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with username \"Tester\" and password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182369000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Order tab",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_clicks_on_order_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:51.891Z",
+        "before": [
+          {
+            "result": {
+              "duration": 884907300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validating discount calculator",
+        "description": "",
+        "id": "validating-order-creation;validating-discount-calculator;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2226811500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 266754600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects product \"FamilyAlbum\" and quantity 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FamilyAlbum\"",
+                  "offset": 21
+                },
+                {
+                  "val": "10",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_selects_product_and_quantity(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86988000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User validates the price is correctly calculated for 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 53
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_validates_the_price_is_correctly_calculated_for(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@webOrders"
+          },
+          {
+            "name": "@orderCreation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Logging in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 271929700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to application",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_navigates_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1129634800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with username \"Tester\" and password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 228741600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Order tab",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_clicks_on_order_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:07:56.901Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1092856400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validating discount calculator",
+        "description": "",
+        "id": "validating-order-creation;validating-discount-calculator;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 2309425200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 315691500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects product \"ScreenSaver\" and quantity 15",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ScreenSaver\"",
+                  "offset": 21
+                },
+                {
+                  "val": "15",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_selects_product_and_quantity(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131092800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User validates the price is correctly calculated for 15",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 53
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_validates_the_price_is_correctly_calculated_for(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@webOrders"
+          },
+          {
+            "name": "@orderCreation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Logging in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 251397800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to application",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_navigates_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1176651500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in with username \"Tester\" and password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 228151300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Order tab",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_clicks_on_order_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-01T18:08:02.392Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1364754100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validating Order Creation functionality",
+        "description": "",
+        "id": "validating-order-creation;validating-order-creation-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 2249179500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2434551000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User creates order with data",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_creates_order_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "PRODUCT",
+                  "QUANTITY",
+                  "CUSTOMER NAME",
+                  "STREET",
+                  "CITY",
+                  "STATE",
+                  "ZIP",
+                  "CARD",
+                  "CARD NUM",
+                  "EXP DATE"
+                ]
+              },
+              {
+                "cells": [
+                  "MyMoney",
+                  "5",
+                  "Jane Doe",
+                  "123 Lee St",
+                  "Boston",
+                  "Massachusetts",
+                  "12345",
+                  "Visa",
+                  "123456789",
+                  "01/25"
+                ]
+              },
+              {
+                "cells": [
+                  "FamilyAlbum",
+                  "10",
+                  "Harsh Patel",
+                  "321 Lee St",
+                  "Seattle",
+                  "Washington",
+                  "54321",
+                  "Visa",
+                  "987654321",
+                  "06/25"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28098000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User validates success message \"New order has been successfully added.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New order has been successfully added.\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_validates_success_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 466441800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User validates created order is in the list of all orders.",
+            "match": {
+              "location": "steps.WebOrdersSteps.user_validates_created_order_is_in_the_list_of_all_orders()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@webOrders"
+          },
+          {
+            "name": "@orderCreation"
+          },
+          {
+            "name": "@placeOrder"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Order Creation",
+    "description": "",
+    "id": "validating-order-creation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/WebOrdersOrderCreation.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@webOrders",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      },
+      {
+        "name": "@orderCreation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 28
+        }
+      }
+    ]
+  }
+]
